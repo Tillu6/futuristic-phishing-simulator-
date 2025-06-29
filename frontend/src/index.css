@@ -1,0 +1,47 @@
+/* frontend/src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles for scrollbars for a futuristic feel */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1b4b; /* primary-950 */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6366f1; /* primary-500 */
+  border-radius: 20px;
+  border: 3px solid #1e1b4b; /* primary-950 */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #1e1b4b;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-primary-600 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:bg-primary-700 transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 text-gray-200 font-medium py-2 px-4 rounded-lg shadow-md hover:bg-gray-600 transition-colors duration-300;
+}
+
+.btn-accent {
+  @apply bg-accent-500 text-white font-medium py-2 px-4 rounded-lg shadow-md hover:bg-accent-600 transition-colors duration-300;
+}
+
+/* Form input styling */
+.input-field {
+  @apply w-full p-3 rounded-lg bg-primary-700 text-primary-100 border border-primary-600 focus:border-accent-400 focus:ring-1 focus:ring-accent-400 outline-none transition-all duration-200;
+}
+
+.textarea-field {
+  @apply input-field h-32 resize-y;
+}

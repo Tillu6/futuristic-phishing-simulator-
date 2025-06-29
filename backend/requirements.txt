@@ -1,0 +1,8 @@
+Flask==3.1.1
+Flask-CORS==6.0.1
+google-cloud-firestore==2.21.0
+google-generativeai==0.8.5
+google-api-core==2.25.1
+google-auth==2.40.3
+protobuf==4.25.3 # Explicitly setting a stable protobuf version
+grpcio==1.62.1   # Explicitly setting a stable grpcio version
